@@ -13,24 +13,39 @@
         android:layout_marginBottom="24dp"/>
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/tvNotifications"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="• Notifications"
         android:textSize="16sp"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:padding="8dp"
         android:layout_marginBottom="12dp"/>
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/tvPrivacy"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="• Privacy &amp; Security"
         android:textSize="16sp"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:padding="8dp"
         android:layout_marginBottom="12dp"/>
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/tvAbout"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="• About App"
         android:textSize="16sp"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:padding="8dp"
         android:layout_marginBottom="12dp"/>
 
 </LinearLayout>
