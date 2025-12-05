@@ -15,15 +15,15 @@ class SettingsActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.tvNotifications.setOnClickListener {
-            Toast.makeText(this, "Notifications Clicked", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, getString(R.string.settings_notifications_clicked), Toast.LENGTH_SHORT).show()
         }
 
         binding.tvPrivacy.setOnClickListener {
-            Toast.makeText(this, "Privacy & Security Clicked", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, getString(R.string.settings_privacy_clicked), Toast.LENGTH_SHORT).show()
         }
 
         binding.tvAbout.setOnClickListener {
-            Toast.makeText(this, "About App Clicked", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, getString(R.string.settings_about_clicked), Toast.LENGTH_SHORT).show()
         }
     }
 }

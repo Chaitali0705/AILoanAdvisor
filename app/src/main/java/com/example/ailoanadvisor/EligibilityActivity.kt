@@ -27,15 +27,15 @@ class EligibilityActivity : AppCompatActivity() {
 
             // Validate that inputs are not empty
             if (ageStr.isEmpty() || incomeStr.isEmpty() || emiStr.isEmpty()) {
-                Toast.makeText(this, "Please fill in all fields", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, getString(R.string.eligibility_fill_all_fields), Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
 
             // Data is collected, but no local eligibility check is performed.
             // This data would typically be sent to a server.
             // For now, just display a confirmation message.
-            binding.tvResult.text = "✅ Form successfully submitted for review."
-            Toast.makeText(this, "Submission successful!", Toast.LENGTH_LONG).show()
+            binding.tvResult.text = getString(R.string.eligibility_form_submitted)
+            Toast.makeText(this, getString(R.string.eligibility_submission_successful), Toast.LENGTH_LONG).show()
         }
     }
 }
